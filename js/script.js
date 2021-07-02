@@ -5,7 +5,7 @@
 const app = new Vue({
        el: '#app',
        data: {
-           email : ''
+           email : 0
 
 
        },
@@ -15,8 +15,9 @@ const app = new Vue({
             axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then (result => {
-                this.email = result.data.response
-                console.log(this.email)
+                this.email = result.data.response;
+                console.log(this.email);
+                
 
             })
 
