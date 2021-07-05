@@ -12,8 +12,8 @@
 <body>
 
     <div id="app">
-        <ol>
-            <li id="ciao" v-if="email">{{email}}</li>
+        <ol v-if="email.length==10">
+            <li v-for=" message in email">{{message}}</li>
             
             
             
